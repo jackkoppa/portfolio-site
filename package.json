@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-site",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jackkoppa/portfolio-site.git"
+  },
+  "devDependencies": {
+    "grunt": "~1.0.0",
+    "grunt-contrib-concat": "~1.0.1",
+    "grunt-contrib-uglify": "~2.0.0",
+    "grunt-contrib-compass": "~1.1.1",
+    "grunt-contrib-jshint": "~1.1.0",
+    "grunt-responsive-images": "~1.10.1"
+  }
+}
