@@ -1,0 +1,68 @@
+@import 'variables';
+@import 'mq';
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	color: $primary;
+	font-family: 'Open Sans', Arial, sans-serif;
+	margin: 0;
+}
+
+// Box Sizing & Padding Framework
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.element {
+	padding: $gutter;
+}
+
+// xs, sm, md, lg, xl Box Sizing
+// xs (base size)
+@for $i from 1 through 12 {
+	.box-xs-#{$i} {
+		width: (100% / 12) * $i;
+	}
+}
+
+// sm (mobile)
+@include mq($from: mobile) {
+	@for $i from 1 through 12 {
+		.box-sm-#{$i} {
+			width: (100% / 12) * $i;
+		}
+	}
+}
+
+// md (tablet)
+@include mq($from: tablet) {
+	@for $i from 1 through 12 {
+		.box-md-#{$i} {
+			width: (100% / 12) * $i;
+		}
+	}
+}
+
+// lg (laptop)
+@include mq($from: desktop) {
+	@for $i from 1 through 12 {
+		.box-lg-#{$i} {
+			width: (100% / 12) * $i;
+		}
+	}
+}
+
+// xl (desktop)
+@include mq($from: wide) {
+	@for $i from 1 through 12 {
+		.box-xl-#{$i} {
+			width: (100% / 12) * $i;
+		}
+	}
+}
