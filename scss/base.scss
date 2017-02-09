@@ -1,15 +1,22 @@
 @import 'variables';
 @import 'mq';
 
+* {
+	box-sizing: border-box;
+}
 html {
 	height: 100%;
 	width: 100%;
 }
 
 body {
-	color: $primary;
+	color: $dark-grey;
 	font-family: 'Open Sans', Arial, sans-serif;
 	margin: 0;
+}
+
+img {
+	max-width: 100%;
 }
 
 // Box Sizing & Padding Framework

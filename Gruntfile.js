@@ -31,6 +31,39 @@ module.exports = function(grunt) {
             }
         },
 
+        responsive_images: {
+            dev: {
+                options: {
+                    engine: 'im',
+                    sizes: [{
+                        name: "480",
+                        width: "480",
+                        quality: 50
+                    },{
+                        name: "680",
+                        width: "680",
+                        quality: 50
+                    },{
+                        name: "900",
+                        width: "900",
+                        quality: 60
+                    },{
+                        name: "1800",
+                        width: "1800",
+                        quality: 60,
+                        suffix: "_2x"
+                    }
+                    ]
+                },
+
+                files: [{
+                    expand: true,
+                    src: ['*.{gif,jpg,png}'],
+                    cwd: 'images_src/',
+                    dest: 'img/'
+                }]
+            }
+        },
         watch: {
             sass: {
                 files: ['scss/*.scss'],
