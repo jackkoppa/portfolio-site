@@ -1,0 +1,29 @@
+.featured {
+    h2 {
+        font-weight: normal;
+        margin-bottom: px2rem(-$gutter);
+        padding-bottom: 0;
+    }
+
+    article {
+        text-align: center;
+        a {
+            background-color: $white;
+            display: block;
+            transition: 0.5s ease;
+            &:hover {
+                background-color: $light-grey;
+            }
+
+            .project-title {
+                padding: px2rem($gutter);
+                word-wrap: break-word;
+                h4 {
+                    font-size: px2rem(h(h2));
+                    font-weight: normal;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

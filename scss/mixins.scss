@@ -11,8 +11,8 @@
 
 // get header map
 @function h($header) {
-	@if not map-has-key($header-sizes, $header) {
-		@warn "header key not found in $header sizes. Property omitted";
-	}
-	@return map-get($header-sizes, $header);
+    @if not map-has-key($header-sizes, $header) {
+        @warn "header key not found in $header sizes. Property omitted";
+    }
+    @return map-get($header-sizes, $header);
 }

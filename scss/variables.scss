@@ -2,14 +2,13 @@
 $base-font-size: 16px !default;
 
 $header-sizes: (
-	h1: 48px,
-	h2: 36px,
-	h3: 30px,
-	h4: 24px,
-	h5: 18px,
-	h6: 12px,
+    h1: 48px,
+    h2: 36px,
+    h3: 30px,
+    h4: 24px,
+    h5: 18px,
+    h6: 12px,
 );
-
 
 // Colors
 $primary: #205686;
@@ -22,5 +21,5 @@ $black: #000;
 
 // Structure
 // Padding
-$gutter: (20px / $base-font-size) * 1rem;
+$gutter: 10px;
 

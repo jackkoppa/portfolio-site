@@ -1,24 +1,27 @@
 .logo img {
-	max-width: (300px / $base-font-size) * 1rem;
-	width: 100%;
+    max-width: (300px / $base-font-size) * 1rem;
+    width: 100%;
 }
 
 .intro {
-	text-align: right;
-	h1 {
-		font-weight: 300;
-		text-transform: uppercase;
-	}
-	h3,
-	span {
-		display: inline;
-		font-size: px2rem(h(h5));
-		font-weight: bold;
-		text-transform: uppercase;
-	}
+    text-align: right;
+    h1 {
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    .title {
+        margin-top: px2rem(5px);
+        h3,
+        span {
+            display: inline;
+            font-size: px2rem(h(h5));
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
 }
 
 hr {
-	border: 2px solid $primary;
-	margin: 0 0 $gutter;
+    border: 2px solid $primary;
+    margin: 0 0 px2rem($gutter * 2);
 }

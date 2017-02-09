@@ -3,18 +3,18 @@
 @import 'mixins';
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-	height: 100%;
-	width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 body {
-	color: $dark-grey;
-	font-family: 'Open Sans', Arial, sans-serif;
-	margin: 0;
+    color: $dark-grey;
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
 }
 
 h1,
@@ -23,70 +23,76 @@ h3,
 h4,
 h5,
 h6 {
-	line-height: 1.2em;
-	margin: 0;
+    line-height: 1.2em;
+    margin: 0;
 
 }
 
 @each $key, $value in $header-sizes {
-	#{$key} { font-size: px2rem($value); }
+    #{$key} { font-size: px2rem($value); }
+}
+
+a {
+    color: $secondary;
+    text-decoration: none;
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 // Box Sizing & Padding Framework
 .container {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: px2rem($gutter);
+    width: 100%;
 }
 
 .element {
-	padding: $gutter;
+    padding: px2rem($gutter);
 }
 
 // xs, sm, md, lg, xl Box Sizing
 // xs (base size)
 @for $i from 1 through 12 {
-	.box-xs-#{$i} {
-		width: (100% / 12) * $i;
-	}
+    .box-xs-#{$i} {
+        width: (100% / 12) * $i;
+    }
 }
 
 // sm (mobile)
 @include mq($from: mobile) {
-	@for $i from 1 through 12 {
-		.box-sm-#{$i} {
-			width: (100% / 12) * $i;
-		}
-	}
+    @for $i from 1 through 12 {
+        .box-sm-#{$i} {
+            width: (100% / 12) * $i;
+        }
+    }
 }
 
 // md (tablet)
 @include mq($from: tablet) {
-	@for $i from 1 through 12 {
-		.box-md-#{$i} {
-			width: (100% / 12) * $i;
-		}
-	}
+    @for $i from 1 through 12 {
+        .box-md-#{$i} {
+            width: (100% / 12) * $i;
+        }
+    }
 }
 
 // lg (laptop)
 @include mq($from: desktop) {
-	@for $i from 1 through 12 {
-		.box-lg-#{$i} {
-			width: (100% / 12) * $i;
-		}
-	}
+    @for $i from 1 through 12 {
+        .box-lg-#{$i} {
+            width: (100% / 12) * $i;
+        }
+    }
 }
 
 // xl (desktop)
 @include mq($from: wide) {
-	@for $i from 1 through 12 {
-		.box-xl-#{$i} {
-			width: (100% / 12) * $i;
-		}
-	}
+    @for $i from 1 through 12 {
+        .box-xl-#{$i} {
+            width: (100% / 12) * $i;
+        }
+    }
 }
