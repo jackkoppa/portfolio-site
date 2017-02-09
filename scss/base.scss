@@ -45,6 +45,8 @@ img {
 .container {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: px2rem(1200px);
     padding: px2rem($gutter);
     width: 100%;
 }

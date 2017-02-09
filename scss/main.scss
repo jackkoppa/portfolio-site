@@ -11,6 +11,7 @@
             box-shadow: 1px 1px 12px -3px $black;
             display: block;
             height: 100%;
+            transition: box-shadow 0.5s ease;
             .project-title {
                 color: $dark-grey;
                 padding: px2rem($gutter);

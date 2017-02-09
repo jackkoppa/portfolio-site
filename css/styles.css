@@ -38,6 +38,7 @@ hr {
   box-shadow: 1px 1px 12px -3px #000;
   display: block;
   height: 100%;
+  transition: box-shadow 0.5s ease;
 }
 .featured article a .project-title {
   color: #333;

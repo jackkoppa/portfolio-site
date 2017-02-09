@@ -31,6 +31,12 @@ module.exports = function(grunt) {
             }
         },
 
+        clean: {
+            dev: {
+                src: ['img'],
+            },
+        },
+
         responsive_images: {
             dev: {
                 options: {
@@ -40,8 +46,8 @@ module.exports = function(grunt) {
                         width: "480",
                         quality: 50
                     },{
-                        name: "680",
-                        width: "680",
+                        name: "640",
+                        width: "640",
                         quality: 50
                     },{
                         name: "900",
@@ -58,11 +64,21 @@ module.exports = function(grunt) {
 
                 files: [{
                     expand: true,
-                    src: ['*.{gif,jpg,png}'],
+                    src: ['*.jpg'],
                     cwd: 'images_src/',
                     dest: 'img/'
                 }]
             }
+        },
+        copy: {
+            dev: {
+                files: [{
+                    expand: true,
+                    cwd: 'images_src',
+                    src: '*.{gif,png,svg}',
+                    dest: 'img/'
+                }]
+            },
         },
         watch: {
             sass: {
@@ -79,9 +95,11 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-postcss');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-responsive-images');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['sass','postcss']);
+    grunt.registerTask('default', ['sass','postcss','clean','responsive_images','copy']);
 
 };
