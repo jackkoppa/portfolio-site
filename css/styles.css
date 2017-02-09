@@ -1,3 +1,18 @@
+.logo img {
+  max-width: 18.75rem;
+  width: 100%;
+}
 
+.intro {
+  text-align: right;
+}
+.intro h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.intro h3,
+.intro span {
+  display: inline;
+}
 
 /*# sourceMappingURL=styles.css.map */
