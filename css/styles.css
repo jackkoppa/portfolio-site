@@ -35,14 +35,12 @@ hr {
   text-align: center;
 }
 .featured article a {
-  background-color: #fff;
+  box-shadow: 1px 1px 12px -3px #000;
   display: block;
-  transition: 0.5s ease;
-}
-.featured article a:hover {
-  background-color: #ddd;
+  height: 100%;
 }
 .featured article a .project-title {
+  color: #333;
   padding: 0.625rem;
   word-wrap: break-word;
 }
@@ -50,6 +48,15 @@ hr {
   font-size: 2.25rem;
   font-weight: normal;
   text-transform: uppercase;
+}
+.featured article a .project-title p {
+  margin: 0;
+}
+.featured article a:hover {
+  box-shadow: 1px 1px 22px -3px #000;
+}
+.featured article a:hover p {
+  color: #2a7e72;
 }
 
 /*# sourceMappingURL=styles.css.map */

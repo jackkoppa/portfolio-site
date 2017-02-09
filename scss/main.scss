@@ -8,20 +8,26 @@
     article {
         text-align: center;
         a {
-            background-color: $white;
+            box-shadow: 1px 1px 12px -3px $black;
             display: block;
-            transition: 0.5s ease;
-            &:hover {
-                background-color: $light-grey;
-            }
-
+            height: 100%;
             .project-title {
+                color: $dark-grey;
                 padding: px2rem($gutter);
                 word-wrap: break-word;
                 h4 {
                     font-size: px2rem(h(h2));
                     font-weight: normal;
                     text-transform: uppercase;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+            &:hover {
+                box-shadow: 1px 1px 22px -3px $black;
+                p {
+                    color: $secondary;
                 }
             }
         }
