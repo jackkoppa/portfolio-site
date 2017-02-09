@@ -1,10 +1,20 @@
 // Typography
 $base-font-size: 16px !default;
 
+$header-sizes: (
+	h1: 48px,
+	h2: 36px,
+	h3: 30px,
+	h4: 24px,
+	h5: 18px,
+	h6: 12px,
+);
+
+
 // Colors
-$primary: #1e534c;
-$secondary: #173550;
-$tertiary: #4f433f;
+$primary: #205686;
+$secondary: #2a7e72;
+$tertiary: #74625c;
 $white: #fff;
 $light-grey: #ddd;
 $dark-grey: #333;

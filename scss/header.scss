@@ -12,5 +12,13 @@
 	h3,
 	span {
 		display: inline;
+		font-size: px2rem(h(h5));
+		font-weight: bold;
+		text-transform: uppercase;
 	}
+}
+
+hr {
+	border: 2px solid $primary;
+	margin: 0 0 $gutter;
 }

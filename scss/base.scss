@@ -1,9 +1,11 @@
 @import 'variables';
 @import 'mq';
+@import 'mixins';
 
 * {
 	box-sizing: border-box;
 }
+
 html {
 	height: 100%;
 	width: 100%;
@@ -13,6 +15,21 @@ body {
 	color: $dark-grey;
 	font-family: 'Open Sans', Arial, sans-serif;
 	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.2em;
+	margin: 0;
+
+}
+
+@each $key, $value in $header-sizes {
+	#{$key} { font-size: px2rem($value); }
 }
 
 img {

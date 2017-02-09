@@ -1,0 +1,18 @@
+// px to rem
+@function px2rem($px, $base-font-size: $base-font-size) {
+    @if unitless($px) {
+        @warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels.";
+        @return px2rem($px * 1px, $base-font-size);
+    } @else if unit($px) == rem {
+        @return $px;
+    }
+    @return ($px / $base-font-size) * 1rem;
+}
+
+// get header map
+@function h($header) {
+	@if not map-has-key($header-sizes, $header) {
+		@warn "header key not found in $header sizes. Property omitted";
+	}
+	@return map-get($header-sizes, $header);
+}
