@@ -1,8 +1,11 @@
 @import 'variables';
 @import 'mq';
 @import 'mixins';
-@import 'typography'; // Include social icons font
 
+/* Typography & social icons font */
+@import 'typography';
+
+/* General element styling */
 * {
     box-sizing: border-box;
 }
@@ -42,7 +45,7 @@ img {
     max-width: 100%;
 }
 
-// Box Sizing & Padding Framework
+/* Box Sizing & Padding Framework */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -57,14 +60,14 @@ img {
 }
 
 // xs, sm, md, lg, xl Box Sizing
-// xs (base size)
+/* xs (base size) */
 @for $i from 1 through 12 {
     .box-xs-#{$i} {
         width: (100% / 12) * $i;
     }
 }
 
-// sm (mobile)
+/* sm (mobile) */
 @include mq($from: mobile) {
     @for $i from 1 through 12 {
         .box-sm-#{$i} {
@@ -73,7 +76,7 @@ img {
     }
 }
 
-// md (tablet)
+/* md (tablet) */
 @include mq($from: tablet) {
     @for $i from 1 through 12 {
         .box-md-#{$i} {
@@ -82,7 +85,7 @@ img {
     }
 }
 
-// lg (laptop)
+/* lg (laptop) */
 @include mq($from: desktop) {
     @for $i from 1 through 12 {
         .box-lg-#{$i} {
@@ -91,7 +94,7 @@ img {
     }
 }
 
-// xl (desktop)
+/* xl (desktop) */
 @include mq($from: wide) {
     @for $i from 1 through 12 {
         .box-xl-#{$i} {

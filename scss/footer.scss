@@ -1,21 +1,27 @@
 footer {
 	background-color: $light-grey;
 	text-align: center;
+
 	.social {
 		font-size: px2rem(h(h3));
+
 		a {
 			color: $dark-grey;
 			transition: 0.5s;
+
 			&:hover {
 				color: $secondary;
 			}
 		}
 
 	}
+
 	@include mq(mobile) {
+
 		.social {
 			text-align: left;
 		}
+
 		.license {
 			text-align: right;
 		}

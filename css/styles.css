@@ -1,3 +1,4 @@
+/* Header */
 .logo img {
   max-width: 18.75rem;
   width: 100%;
@@ -26,6 +27,7 @@ hr {
   margin: 0 0 1.25rem;
 }
 
+/* Main */
 .featured h2 {
   font-weight: normal;
   margin-bottom: -0.625rem;
@@ -50,6 +52,11 @@ hr {
   font-weight: normal;
   text-transform: uppercase;
 }
+@media (min-width: 40em) and (max-width: 43.75em) {
+  .featured article a .project-title h4 {
+    font-size: 1.875rem;
+  }
+}
 .featured article a .project-title p {
   margin: 0;
 }
@@ -60,6 +67,7 @@ hr {
   color: #2a7e72;
 }
 
+/* Footer */
 footer {
   background-color: #ddd;
   text-align: center;
