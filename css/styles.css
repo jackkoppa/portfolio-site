@@ -60,4 +60,27 @@ hr {
   color: #2a7e72;
 }
 
+footer {
+  background-color: #ddd;
+  text-align: center;
+}
+footer .social {
+  font-size: 1.875rem;
+}
+footer .social a {
+  color: #333;
+  transition: 0.5s;
+}
+footer .social a:hover {
+  color: #2a7e72;
+}
+@media (min-width: 30em) {
+  footer .social {
+    text-align: left;
+  }
+  footer .license {
+    text-align: right;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
