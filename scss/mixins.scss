@@ -1,5 +1,8 @@
 // px to rem
 @function px2rem($px, $base-font-size: $base-font-size) {
+    @if $px == null {
+        @return null;
+    }
     @if unitless($px) {
         @warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels.";
         @return px2rem($px * 1px, $base-font-size);
@@ -11,19 +14,29 @@
 
 // px to em
 @function px2em($px, $base-font-size: $base-font-size) {
+    @if $px == null {
+        @return null;
+    }
     @if unitless($px) {
         @warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels.";
-        @return px2rem($px * 1px, $base-font-size);
+        @return px2em($px * 1px, $base-font-size);
     } @else if unit($px) == em {
         @return $px;
     }
     @return ($px / $base-font-size) * 1em;
 }
 
-// get header map
-@function h($header) {
-    @if not map-has-key($header-sizes, $header) {
-        @warn "header key not found in $header sizes. Property omitted";
+// get font-sizes map
+@function f($element, $breakpoint: base) {
+    @if not map-has-key($font-sizes, $element) {
+        @warn "element key not found in $font-sizes. Property omitted";
     }
-    @return map-get($header-sizes, $header);
+
+    // allows for individual selection of media query font-sizes
+    $size-options: map-get($font-sizes, $element);
+    @if not map-has-key($size-options, $breakpoint) {
+        @return map-get($size-options, 'base');
+    }
+
+    @return map-get($size-options, $breakpoint);
 }

@@ -1,7 +1,17 @@
 /* Header */
 .logo img {
-  max-width: 18.75rem;
+  max-width: 12.5rem;
   width: 100%;
+}
+@media (min-width: 30em) {
+  .logo img {
+    max-width: 15.625rem;
+  }
+}
+@media (min-width: 40em) {
+  .logo img {
+    max-width: 18.75rem;
+  }
 }
 
 .intro {
@@ -27,6 +37,15 @@ hr {
   margin: 0 0 1.25rem;
 }
 
+.banner {
+  max-height: 450px;
+  overflow: hidden;
+}
+.banner img {
+  margin: 0 auto;
+  width: 100%;
+}
+
 /* Main */
 .featured h2 {
   font-weight: normal;
@@ -48,14 +67,9 @@ hr {
   word-wrap: break-word;
 }
 .featured article a .project-title h4 {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   font-weight: normal;
   text-transform: uppercase;
-}
-@media (min-width: 40em) and (max-width: 43.75em) {
-  .featured article a .project-title h4 {
-    font-size: 1.875rem;
-  }
 }
 .featured article a .project-title p {
   margin: 0;
@@ -74,6 +88,11 @@ footer {
 }
 footer .social {
   font-size: 1.875rem;
+}
+@media (min-width: 30em) {
+  footer .social {
+    font-size: 2.25rem;
+  }
 }
 footer .social a {
   color: #333;

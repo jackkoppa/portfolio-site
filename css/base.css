@@ -55,24 +55,25 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.2em;
+  line-height: 1.2;
   margin: 0;
 }
 
+/* Font sizes & media query font sizes */
 h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2.25rem;
-}
-
-h3 {
   font-size: 1.875rem;
 }
 
-h4 {
+h2 {
   font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
 }
 
 h5 {
@@ -83,6 +84,45 @@ h6 {
   font-size: 0.75rem;
 }
 
+p {
+  font-size: 1rem;
+}
+
+@media (min-width: 30em) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 40em) {
+  h1 {
+    font-size: 2.625rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.875rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 a {
   color: #2a7e72;
   text-decoration: none;
@@ -101,9 +141,19 @@ img {
   padding: 0.625rem;
   width: 100%;
 }
+@media (min-width: 40em) {
+  .container {
+    padding: 0.625rem;
+  }
+}
 
 .element {
   padding: 0.625rem;
+}
+@media (min-width: 40em) {
+  .element {
+    padding: 0.625rem;
+  }
 }
 
 /* xs (base size) */

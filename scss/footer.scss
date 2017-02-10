@@ -3,8 +3,10 @@ footer {
 	text-align: center;
 
 	.social {
-		font-size: px2rem(h(h3));
-
+		font-size: px2rem(f(h1));
+		@include mq(mobile) {
+			font-size: px2rem(f(h1,mobile));
+		}
 		a {
 			color: $dark-grey;
 			transition: 0.5s;

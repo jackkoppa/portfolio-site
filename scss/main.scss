@@ -21,13 +21,9 @@
                 word-wrap: break-word;
 
                 h4 {
-                    font-size: px2rem(h(h2));
+                    font-size: px2rem(f(h2));
                     font-weight: normal;
                     text-transform: uppercase;
-
-                    @include mq(tablet, 700px) {
-                        font-size: px2rem(h(h3));
-                    }
                 }
 
                 p {
