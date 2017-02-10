@@ -12,3 +12,5 @@ jspm_packages
 
 # Optional npm cache directory
 .npm
+
+# Would normally add css directory here, but will track for ease of viewing by Udacity/others

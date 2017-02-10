@@ -1,2 +1,2 @@
 # portfolio-site
-Create single-page personal portfolio using HTML &amp; CSS - 3nd project for Udacity Front-End Nanodegree, very simple
+Create single-page personal portfolio using HTML, CSS, & heavy grunt.js automation - 3nd project for Udacity Front-End Nanodegree, fairly simple

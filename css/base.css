@@ -134,8 +134,10 @@ img {
 
 /* Box Sizing & Padding Framework */
 .container {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 auto;
   max-width: 75rem;
   padding: 0.625rem;
@@ -406,4 +408,4 @@ img {
   }
 }
 
-/*# sourceMappingURL=base.css.map */
+/*# sourceMappingURL=maps/base.css.map */
