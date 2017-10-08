@@ -13,6 +13,6 @@ cd udacity-portfolio-site
 grunt
 start index.html
 ```
-Prompted to open in-browser; will now have latest styles & images
+Prompted to open in-browser (as site is static); will now have latest styles & images
 
 Available on GitHub Pages: https://jackkoppa.github.io/udactity-portfolio-site/
