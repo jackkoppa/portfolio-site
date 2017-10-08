@@ -56,10 +56,14 @@ hr {
   text-align: center;
 }
 .featured article a {
-  box-shadow: 1px 1px 12px -3px #000;
+  -webkit-box-shadow: 1px 1px 12px -3px #000;
+          box-shadow: 1px 1px 12px -3px #000;
   display: block;
   height: 100%;
+  -webkit-transition: -webkit-box-shadow 0.5s ease;
+  transition: -webkit-box-shadow 0.5s ease;
   transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
 }
 .featured article a .project-title {
   color: #333;
@@ -75,7 +79,8 @@ hr {
   margin: 0;
 }
 .featured article a:hover {
-  box-shadow: 1px 1px 22px -3px #000;
+  -webkit-box-shadow: 1px 1px 22px -3px #000;
+          box-shadow: 1px 1px 22px -3px #000;
 }
 .featured article a:hover p {
   color: #2a7e72;
@@ -96,6 +101,7 @@ footer .social {
 }
 footer .social a {
   color: #333;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 footer .social a:hover {

@@ -35,7 +35,8 @@
 
 /* General element styling */
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -134,6 +135,7 @@ img {
 
 /* Box Sizing & Padding Framework */
 .container {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
