@@ -17,4 +17,4 @@ jspm_packages
 # Cache of sass files
 .sass-cache
 
-# Would normally add css directory here, but will track for ease of viewing by Udacity/others
+# Would normally add css & generated images directories here, but tracking those to allow GitHub Pages from this repo
