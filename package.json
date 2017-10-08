@@ -5,6 +5,7 @@
     "type": "git",
     "url": "https://github.com/jackkoppa/portfolio-site.git"
   },
+  "license": "MIT",
   "devDependencies": {
     "grunt": "~1.0.0",
     "grunt-contrib-clean": "^1.0.0",
