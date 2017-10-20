@@ -2,7 +2,7 @@
 ## Background
 Create single-page personal portfolio using HTML, CSS, & heavy grunt.js automation - 3nd project for [Udacity Front-End Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001), fairly simple. Uses a custom Sass framework for a lightweight, parameterized responsive grid, and ImageMagick for responsive images.
 
-Available on GitHub Pages: https://jackkoppa.github.io/udactity-portfolio-site/
+Available on GitHub Pages: https://jackkoppa.github.io/udacity-portfolio-site/
 
 ## Running Locally
 ### Install
